@@ -66,7 +66,7 @@ threeContacts.forEach(contact => {
   // Your code goes here ...
   
   const deleteBtn = newRow.querySelector(".btn-delete")
-  deleteBtn.addEventListner("click", () => {
+  deleteBtn.addEventListener("click", () => {
     newRow.remove()
   })
 
