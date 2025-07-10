@@ -40,12 +40,12 @@ const threeContacts = contacts.splice(0, 3);
 
 // Your code goes here ...
 
-firstThreeContacts.forEach(contact => {
+threeContacts.forEach(contact => {
   const newRow = document.createElement("tr")
 
   newRow.innerHTML = `
   <td>
-    <img src=`${contact.pictureUrl}` />
+    <img src="${contact.pictureUrl}" />
   </td>
   <td>${contact.name}</td>
   <td>${contact.popularity.toFixed(2)}</td>
@@ -75,7 +75,7 @@ firstThreeContacts.forEach(contact => {
   // Your code goes here ...
 
   const likeBtn = newRow.querySelector(".btn-like")
-  likeBtn.addEventListner("click", () => {
+  likeBtn.addEventListener("click", () => {
     likeBtn.classList.toggle("selected")
   })
   
@@ -115,12 +115,12 @@ addRandomBtn.addEventListener("click", () => {
   tableBody.appendChild(newRow);
 
     const deleteBtn = newRow.querySelector(".btn-delete")
-  deleteBtn.addEventListner("click", () => {
+  deleteBtn.addEventListener("click", () => {
     newRow.remove()
   })
 
   const likeBtn = newRow.querySelector(".btn-like")
-  likeBtn.addEventListner("click", () => {
+  likeBtn.addEventListener("click", () => {
     likeBtn.classList.toggle("selected")
   })
 
