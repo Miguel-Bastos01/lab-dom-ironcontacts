@@ -65,20 +65,29 @@ threeContacts.forEach(contact => {
   
   // Your code goes here ...
   
-  const deleteBtn = newRow.querySelector(".btn-delete")
+ threeContacts.forEach(contact => {
+  const newRow = document.createElement("tr");
+  newRow.innerHTML = `...`;
+  tableBody.appendChild(newRow);
+  const deleteBtn = newRow.querySelector(".btn-delete");
   deleteBtn.addEventListener("click", () => {
-    newRow.remove()
-  })
+    newRow.remove();
+  });
+});
 
   // ITERATION 3 - Like Buttons
 
   // Your code goes here ...
 
-  const likeBtn = newRow.querySelector(".btn-like")
+ threeContacts.forEach(contact => {
+  const newRow = document.createElement("tr");
+  newRow.innerHTML = `...`;
+  tableBody.appendChild(newRow);
+  const likeBtn = newRow.querySelector(".btn-like");
   likeBtn.addEventListener("click", () => {
-    likeBtn.classList.toggle("selected")
-  })
-  
+    likeBtn.classList.toggle("selected");
+  });
+});
 
 
 // Bonus: ITERATION 4 - Add Random Contacts
